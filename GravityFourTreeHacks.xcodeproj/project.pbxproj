@@ -8,26 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		5731FEC82217E26400F77AF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731FEC72217E26400F77AF5 /* AppDelegate.swift */; };
-		5731FECA2217E26400F77AF5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5731FEC92217E26400F77AF5 /* GameScene.sks */; };
-		5731FECC2217E26400F77AF5 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5731FECB2217E26400F77AF5 /* Actions.sks */; };
-		5731FECE2217E26400F77AF5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731FECD2217E26400F77AF5 /* GameScene.swift */; };
 		5731FED02217E26400F77AF5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731FECF2217E26400F77AF5 /* GameViewController.swift */; };
 		5731FED32217E26400F77AF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5731FED12217E26400F77AF5 /* Main.storyboard */; };
 		5731FED52217E26700F77AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5731FED42217E26700F77AF5 /* Assets.xcassets */; };
 		5731FED82217E26700F77AF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5731FED62217E26700F77AF5 /* LaunchScreen.storyboard */; };
+		5731FEE12217E36200F77AF5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731FEE02217E36200F77AF5 /* Game.swift */; };
+		5731FEE32217F1FA00F77AF5 /* BasicTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731FEE22217F1FA00F77AF5 /* BasicTestViewController.swift */; };
+		5731FEE52217FE5700F77AF5 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731FEE42217FE5700F77AF5 /* MainMenuViewController.swift */; };
+		5731FEEC221807AF00F77AF5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5731FEEB221807AF00F77AF5 /* GameScene.sks */; };
+		5731FEEF221807E300F77AF5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731FEEE221807E300F77AF5 /* GameScene.swift */; };
+		5731FEF1221818CC00F77AF5 /* PieceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731FEF0221818CC00F77AF5 /* PieceNode.swift */; };
+		5731FEF322181ABF00F77AF5 /* RedCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5731FEF222181ABF00F77AF5 /* RedCircle.png */; };
+		5731FEF522181AC600F77AF5 /* BlackCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5731FEF422181AC500F77AF5 /* BlackCircle.png */; };
+		64871EAE0F7213FD6ABBD50C /* Pods_GravityFourTreeHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D879D281C1E8EA7814875DE2 /* Pods_GravityFourTreeHacks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5731FEC42217E26400F77AF5 /* GravityFourTreeHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GravityFourTreeHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5731FEC72217E26400F77AF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5731FEC92217E26400F77AF5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		5731FECB2217E26400F77AF5 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		5731FECD2217E26400F77AF5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		5731FECF2217E26400F77AF5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		5731FED22217E26400F77AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5731FED42217E26700F77AF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5731FED72217E26700F77AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5731FED92217E26700F77AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5731FEE02217E36200F77AF5 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5731FEE22217F1FA00F77AF5 /* BasicTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTestViewController.swift; sourceTree = "<group>"; };
+		5731FEE42217FE5700F77AF5 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		5731FEEB221807AF00F77AF5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		5731FEEE221807E300F77AF5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		5731FEF0221818CC00F77AF5 /* PieceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceNode.swift; sourceTree = "<group>"; };
+		5731FEF222181ABF00F77AF5 /* RedCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedCircle.png; sourceTree = "<group>"; };
+		5731FEF422181AC500F77AF5 /* BlackCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlackCircle.png; sourceTree = "<group>"; };
+		7520E2AD1174C114C5F46722 /* Pods-GravityFourTreeHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GravityFourTreeHacks.release.xcconfig"; path = "Target Support Files/Pods-GravityFourTreeHacks/Pods-GravityFourTreeHacks.release.xcconfig"; sourceTree = "<group>"; };
+		A2429802F300045863BC5047 /* Pods-GravityFourTreeHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GravityFourTreeHacks.debug.xcconfig"; path = "Target Support Files/Pods-GravityFourTreeHacks/Pods-GravityFourTreeHacks.debug.xcconfig"; sourceTree = "<group>"; };
+		D879D281C1E8EA7814875DE2 /* Pods_GravityFourTreeHacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GravityFourTreeHacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64871EAE0F7213FD6ABBD50C /* Pods_GravityFourTreeHacks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +61,8 @@
 			children = (
 				5731FEC62217E26400F77AF5 /* GravityFourTreeHacks */,
 				5731FEC52217E26400F77AF5 /* Products */,
+				B428D7C0363B14D406E1B9AD /* Pods */,
+				74D402F2342A4E14F9EFBA39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,16 +78,54 @@
 			isa = PBXGroup;
 			children = (
 				5731FEC72217E26400F77AF5 /* AppDelegate.swift */,
-				5731FEC92217E26400F77AF5 /* GameScene.sks */,
-				5731FECB2217E26400F77AF5 /* Actions.sks */,
-				5731FECD2217E26400F77AF5 /* GameScene.swift */,
+				5731FEED221807BF00F77AF5 /* GameScene */,
+				5731FEDF2217E34900F77AF5 /* GameBackend */,
 				5731FECF2217E26400F77AF5 /* GameViewController.swift */,
+				5731FEE42217FE5700F77AF5 /* MainMenuViewController.swift */,
+				5731FEF222181ABF00F77AF5 /* RedCircle.png */,
+				5731FEF422181AC500F77AF5 /* BlackCircle.png */,
+				5731FEE22217F1FA00F77AF5 /* BasicTestViewController.swift */,
 				5731FED12217E26400F77AF5 /* Main.storyboard */,
 				5731FED42217E26700F77AF5 /* Assets.xcassets */,
 				5731FED62217E26700F77AF5 /* LaunchScreen.storyboard */,
 				5731FED92217E26700F77AF5 /* Info.plist */,
 			);
 			path = GravityFourTreeHacks;
+			sourceTree = "<group>";
+		};
+		5731FEDF2217E34900F77AF5 /* GameBackend */ = {
+			isa = PBXGroup;
+			children = (
+				5731FEE02217E36200F77AF5 /* Game.swift */,
+			);
+			path = GameBackend;
+			sourceTree = "<group>";
+		};
+		5731FEED221807BF00F77AF5 /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				5731FEEB221807AF00F77AF5 /* GameScene.sks */,
+				5731FEEE221807E300F77AF5 /* GameScene.swift */,
+				5731FEF0221818CC00F77AF5 /* PieceNode.swift */,
+			);
+			path = GameScene;
+			sourceTree = "<group>";
+		};
+		74D402F2342A4E14F9EFBA39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D879D281C1E8EA7814875DE2 /* Pods_GravityFourTreeHacks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B428D7C0363B14D406E1B9AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2429802F300045863BC5047 /* Pods-GravityFourTreeHacks.debug.xcconfig */,
+				7520E2AD1174C114C5F46722 /* Pods-GravityFourTreeHacks.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5731FEDC2217E26700F77AF5 /* Build configuration list for PBXNativeTarget "GravityFourTreeHacks" */;
 			buildPhases = (
+				F6415BFC6B9CCFC456D7622B /* [CP] Check Pods Manifest.lock */,
 				5731FEC02217E26400F77AF5 /* Sources */,
 				5731FEC12217E26400F77AF5 /* Frameworks */,
 				5731FEC22217E26400F77AF5 /* Resources */,
+				B87A949A6018B87E4C7F6836 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,24 +188,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5731FEEC221807AF00F77AF5 /* GameScene.sks in Resources */,
+				5731FEF522181AC600F77AF5 /* BlackCircle.png in Resources */,
+				5731FEF322181ABF00F77AF5 /* RedCircle.png in Resources */,
 				5731FED32217E26400F77AF5 /* Main.storyboard in Resources */,
-				5731FECA2217E26400F77AF5 /* GameScene.sks in Resources */,
 				5731FED52217E26700F77AF5 /* Assets.xcassets in Resources */,
 				5731FED82217E26700F77AF5 /* LaunchScreen.storyboard in Resources */,
-				5731FECC2217E26400F77AF5 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B87A949A6018B87E4C7F6836 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GravityFourTreeHacks/Pods-GravityFourTreeHacks-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QuickLayout/QuickLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftEntryKit/SwiftEntryKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEntryKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GravityFourTreeHacks/Pods-GravityFourTreeHacks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6415BFC6B9CCFC456D7622B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GravityFourTreeHacks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5731FEC02217E26400F77AF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5731FECE2217E26400F77AF5 /* GameScene.swift in Sources */,
+				5731FEEF221807E300F77AF5 /* GameScene.swift in Sources */,
+				5731FEE52217FE5700F77AF5 /* MainMenuViewController.swift in Sources */,
+				5731FEF1221818CC00F77AF5 /* PieceNode.swift in Sources */,
 				5731FED02217E26400F77AF5 /* GameViewController.swift in Sources */,
 				5731FEC82217E26400F77AF5 /* AppDelegate.swift in Sources */,
+				5731FEE12217E36200F77AF5 /* Game.swift in Sources */,
+				5731FEE32217F1FA00F77AF5 /* BasicTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +403,7 @@
 		};
 		5731FEDD2217E26700F77AF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2429802F300045863BC5047 /* Pods-GravityFourTreeHacks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,6 +422,7 @@
 		};
 		5731FEDE2217E26700F77AF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7520E2AD1174C114C5F46722 /* Pods-GravityFourTreeHacks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -11,6 +11,11 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
+    
+    
+    var playerOneName = ""
+    var playerTwoName = ""
+    var gameType: GameType!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +23,12 @@ class GameViewController: UIViewController {
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") {
+                
+                let scene = scene as! GameScene
+                
+                scene.playerOneName = playerOneName
+                scene.playerTwoName = playerTwoName
+                
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 
