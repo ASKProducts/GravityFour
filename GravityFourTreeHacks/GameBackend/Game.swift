@@ -89,6 +89,14 @@ class Game {
         winResults = []
     }
     
+    func isBoardFull() -> Bool {
+        for c in 0..<numCols{
+            if canMakeMove(move: .drop(c)){
+                return false
+            }
+        }
+        return true
+    }
     //returns the number of pieces in column col
     func colHeight(_ col: Int) -> Int{
         return board[col].filter{$0 != nil}.count
@@ -118,6 +126,8 @@ class Game {
         
         turnHistory.append(move)
         turnNumber += 1
+        
+        print(toString())
         
         return true
     }

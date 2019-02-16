@@ -28,9 +28,10 @@ class GameViewController: UIViewController {
                 
                 scene.playerOneName = playerOneName
                 scene.playerTwoName = playerTwoName
-                
+                scene.gameType = gameType
+                scene.gvc = self
                 // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
+                //scene.scaleMode = .aspectFill
                 
                 // Present the scene
                 view.presentScene(scene)

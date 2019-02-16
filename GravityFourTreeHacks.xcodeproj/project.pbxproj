@@ -20,6 +20,15 @@
 		5731FEF1221818CC00F77AF5 /* PieceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731FEF0221818CC00F77AF5 /* PieceNode.swift */; };
 		5731FEF322181ABF00F77AF5 /* RedCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5731FEF222181ABF00F77AF5 /* RedCircle.png */; };
 		5731FEF522181AC600F77AF5 /* BlackCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5731FEF422181AC500F77AF5 /* BlackCircle.png */; };
+		5731FEF722181C7D00F77AF5 /* BoardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731FEF622181C7D00F77AF5 /* BoardNode.swift */; };
+		5731FEF9221852F400F77AF5 /* RotateButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731FEF8221852F400F77AF5 /* RotateButtonNode.swift */; };
+		5731FEFB2218550300F77AF5 /* RotateLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 5731FEFA2218550300F77AF5 /* RotateLeft.png */; };
+		5731FEFD2218550A00F77AF5 /* RotateRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 5731FEFC2218550A00F77AF5 /* RotateRight.png */; };
+		5798387022187CFE00852E22 /* GoBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 5798386F22187CFE00852E22 /* GoBack.png */; };
+		579838722218809000852E22 /* GoBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579838712218809000852E22 /* GoBackButton.swift */; };
+		57983874221893C700852E22 /* Restart.png in Resources */ = {isa = PBXBuildFile; fileRef = 57983873221893C700852E22 /* Restart.png */; };
+		57983876221893E700852E22 /* RestartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57983875221893E700852E22 /* RestartButton.swift */; };
+		5798387822189C7400852E22 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798387722189C7400852E22 /* User.swift */; };
 		64871EAE0F7213FD6ABBD50C /* Pods_GravityFourTreeHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D879D281C1E8EA7814875DE2 /* Pods_GravityFourTreeHacks.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +48,15 @@
 		5731FEF0221818CC00F77AF5 /* PieceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceNode.swift; sourceTree = "<group>"; };
 		5731FEF222181ABF00F77AF5 /* RedCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedCircle.png; sourceTree = "<group>"; };
 		5731FEF422181AC500F77AF5 /* BlackCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlackCircle.png; sourceTree = "<group>"; };
+		5731FEF622181C7D00F77AF5 /* BoardNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardNode.swift; sourceTree = "<group>"; };
+		5731FEF8221852F400F77AF5 /* RotateButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateButtonNode.swift; sourceTree = "<group>"; };
+		5731FEFA2218550300F77AF5 /* RotateLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RotateLeft.png; sourceTree = "<group>"; };
+		5731FEFC2218550A00F77AF5 /* RotateRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RotateRight.png; sourceTree = "<group>"; };
+		5798386F22187CFE00852E22 /* GoBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoBack.png; sourceTree = "<group>"; };
+		579838712218809000852E22 /* GoBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoBackButton.swift; sourceTree = "<group>"; };
+		57983873221893C700852E22 /* Restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Restart.png; sourceTree = "<group>"; };
+		57983875221893E700852E22 /* RestartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartButton.swift; sourceTree = "<group>"; };
+		5798387722189C7400852E22 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7520E2AD1174C114C5F46722 /* Pods-GravityFourTreeHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GravityFourTreeHacks.release.xcconfig"; path = "Target Support Files/Pods-GravityFourTreeHacks/Pods-GravityFourTreeHacks.release.xcconfig"; sourceTree = "<group>"; };
 		A2429802F300045863BC5047 /* Pods-GravityFourTreeHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GravityFourTreeHacks.debug.xcconfig"; path = "Target Support Files/Pods-GravityFourTreeHacks/Pods-GravityFourTreeHacks.debug.xcconfig"; sourceTree = "<group>"; };
 		D879D281C1E8EA7814875DE2 /* Pods_GravityFourTreeHacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GravityFourTreeHacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +102,10 @@
 				5731FEE42217FE5700F77AF5 /* MainMenuViewController.swift */,
 				5731FEF222181ABF00F77AF5 /* RedCircle.png */,
 				5731FEF422181AC500F77AF5 /* BlackCircle.png */,
+				5731FEFA2218550300F77AF5 /* RotateLeft.png */,
+				5731FEFC2218550A00F77AF5 /* RotateRight.png */,
+				5798386F22187CFE00852E22 /* GoBack.png */,
+				57983873221893C700852E22 /* Restart.png */,
 				5731FEE22217F1FA00F77AF5 /* BasicTestViewController.swift */,
 				5731FED12217E26400F77AF5 /* Main.storyboard */,
 				5731FED42217E26700F77AF5 /* Assets.xcassets */,
@@ -107,6 +129,11 @@
 				5731FEEB221807AF00F77AF5 /* GameScene.sks */,
 				5731FEEE221807E300F77AF5 /* GameScene.swift */,
 				5731FEF0221818CC00F77AF5 /* PieceNode.swift */,
+				5731FEF622181C7D00F77AF5 /* BoardNode.swift */,
+				5731FEF8221852F400F77AF5 /* RotateButtonNode.swift */,
+				579838712218809000852E22 /* GoBackButton.swift */,
+				57983875221893E700852E22 /* RestartButton.swift */,
+				5798387722189C7400852E22 /* User.swift */,
 			);
 			path = GameScene;
 			sourceTree = "<group>";
@@ -193,7 +220,11 @@
 				5731FEF322181ABF00F77AF5 /* RedCircle.png in Resources */,
 				5731FED32217E26400F77AF5 /* Main.storyboard in Resources */,
 				5731FED52217E26700F77AF5 /* Assets.xcassets in Resources */,
+				57983874221893C700852E22 /* Restart.png in Resources */,
 				5731FED82217E26700F77AF5 /* LaunchScreen.storyboard in Resources */,
+				5731FEFB2218550300F77AF5 /* RotateLeft.png in Resources */,
+				5798387022187CFE00852E22 /* GoBack.png in Resources */,
+				5731FEFD2218550A00F77AF5 /* RotateRight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,13 +284,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5731FEF722181C7D00F77AF5 /* BoardNode.swift in Sources */,
 				5731FEEF221807E300F77AF5 /* GameScene.swift in Sources */,
 				5731FEE52217FE5700F77AF5 /* MainMenuViewController.swift in Sources */,
 				5731FEF1221818CC00F77AF5 /* PieceNode.swift in Sources */,
 				5731FED02217E26400F77AF5 /* GameViewController.swift in Sources */,
 				5731FEC82217E26400F77AF5 /* AppDelegate.swift in Sources */,
+				57983876221893E700852E22 /* RestartButton.swift in Sources */,
+				579838722218809000852E22 /* GoBackButton.swift in Sources */,
+				5798387822189C7400852E22 /* User.swift in Sources */,
 				5731FEE12217E36200F77AF5 /* Game.swift in Sources */,
 				5731FEE32217F1FA00F77AF5 /* BasicTestViewController.swift in Sources */,
+				5731FEF9221852F400F77AF5 /* RotateButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
