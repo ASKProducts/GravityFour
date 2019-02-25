@@ -17,8 +17,8 @@ class BasicTestViewController: UIViewController {
         
         game = Game(initialRows: 6,
                     initialCols: 7,
-                    playerOne: Player(ID: 1, name: "Player One"),
-                    playerTwo: Player(ID: 2, name: "Player Two"))
+                    playerOne: Player(ID: 1, name: "Player One", inputType: .UI),
+                    playerTwo: Player(ID: 2, name: "Player Two", inputType: .UI))
         
         display.text = game.toString()
         winStatus.text = "\(game.winResults)"
@@ -46,8 +46,8 @@ class BasicTestViewController: UIViewController {
     @IBAction func restart(_ sender: Any) {
         game = Game(initialRows: 6,
                     initialCols: 7,
-                    playerOne: Player(ID: 1, name: "Player One"),
-                    playerTwo: Player(ID: 2, name: "Player Two"))
+                    playerOne: Player(ID: 1, name: "Player One", inputType: .UI),
+                    playerTwo: Player(ID: 2, name: "Player Two", inputType: .UI))
         
         display.text = game.toString()
         winStatus.text = "\(game.winResults)"

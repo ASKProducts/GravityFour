@@ -19,7 +19,7 @@ class PieceNode: SKSpriteNode {
     let playerOneImage = "RedCircle"
     let playerTwoImage = "BlackCircle"
     
-    let FILL_FRACTION = CGFloat(1)
+    let FILL_FRACTION = CGFloat(0.95)
     let OFFSET = CGFloat(2)
     
     var isWidthSmaller: Bool = true

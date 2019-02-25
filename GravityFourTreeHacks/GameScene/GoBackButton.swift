@@ -14,7 +14,7 @@ class GoBackButton: SKSpriteNode {
         self.gameScene = gameScene
         
         
-        super.init(texture: SKTexture(imageNamed: "GoBack"), color: .clear, size: CGSize(width: gameScene.TITLE_LABEL_HEIGHT, height: gameScene.TITLE_LABEL_HEIGHT))
+        super.init(texture: SKTexture(imageNamed: "GoBack"), color: .clear, size: CGSize(width: 50, height: 50))
         self.isUserInteractionEnabled = true
     }
     

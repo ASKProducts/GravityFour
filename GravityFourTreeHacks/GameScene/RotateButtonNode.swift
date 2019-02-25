@@ -11,8 +11,8 @@ import SpriteKit
 
 class RotateButtonNode: SKSpriteNode {
     
-    let ROTATE_LEFT_IMAGE = "RotateLeft"
-    let ROTATE_RIGHT_IMAGE = "RotateRight"
+    let ROTATE_LEFT_IMAGE = "RotateCounterClockwiseGradient"
+    let ROTATE_RIGHT_IMAGE = "RotateClockwiseGradient"
     
     let BOARD_TO_ROTATE_BUTTON_RATIO = CGFloat(0.3)
     
@@ -32,8 +32,9 @@ class RotateButtonNode: SKSpriteNode {
         
         self.highLighter = SKShapeNode(rectOf: self.size)
         highLighter.strokeColor = .clear
-        highLighter.fillColor = board.HIGHLIGHTER_FOCUS_COLOR
+        highLighter.fillColor = .init(white: 1, alpha: 0.3)
         highLighter.isHidden = true
+        highLighter.zPosition = 20
         self.addChild(highLighter)
         
         isUserInteractionEnabled = true
@@ -60,7 +61,7 @@ class RotateButtonNode: SKSpriteNode {
         highLighter.isHidden = true
         if -size.width/2 < loc.x && loc.x < size.width/2{
             if -size.height/2 < loc.y && loc.y < size.height/2 {
-                gameScene.executeRotation(dir: self.dir)
+                gameScene.executeMove(.rotate(dir))
                 return
             }
         }

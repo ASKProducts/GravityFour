@@ -9,13 +9,18 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import Firebase
+import FirebaseAuth
 
 class GameViewController: UIViewController {
-    
+    var handle: AuthStateDidChangeListenerHandle?
     
     var playerOneName = ""
     var playerTwoName = ""
     var gameType: GameType!
+    
+    var isAIFirst: Bool!
+    var aiDifficulty: AIDifficulty!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +35,8 @@ class GameViewController: UIViewController {
                 scene.playerTwoName = playerTwoName
                 scene.gameType = gameType
                 scene.gvc = self
+                scene.isAIFirst = isAIFirst
+                scene.aiDifficulty = self.aiDifficulty
                 // Set the scale mode to scale to fit the window
                 //scene.scaleMode = .aspectFill
                 
@@ -58,5 +65,16 @@ class GameViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // ...
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle!)
     }
 }

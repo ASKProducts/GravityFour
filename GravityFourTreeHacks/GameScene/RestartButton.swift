@@ -15,7 +15,7 @@ class RestartButton: SKSpriteNode {
         self.gameScene = gameScene
         
         
-        super.init(texture: SKTexture(imageNamed: "Restart"), color: .clear, size: CGSize(width: gameScene.TITLE_LABEL_HEIGHT, height: gameScene.TITLE_LABEL_HEIGHT))
+        super.init(texture: SKTexture(imageNamed: "Restart"), color: .clear, size: CGSize(width: 50, height: 50))
         self.isUserInteractionEnabled = true
     }
     
@@ -36,6 +36,8 @@ class RestartButton: SKSpriteNode {
                     scene.playerTwoName = gameScene.playerTwoName
                     scene.gameType = gameScene.gameType
                     scene.gvc = gameScene.gvc
+                    scene.isAIFirst = gameScene.isAIFirst
+                    scene.aiDifficulty = gameScene.aiDifficulty
                     // Set the scale mode to scale to fit the window
                     //scene.scaleMode = .aspectFill
                     

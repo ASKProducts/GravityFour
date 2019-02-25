@@ -12,6 +12,10 @@ import UIKit
 struct Player : Equatable{
     let ID: Int
     let name: String
+    enum InputType{
+        case UI, AI, Server
+    }
+    let inputType: InputType
 }
 
 struct Piece {

@@ -15,7 +15,7 @@ class BoardNode: SKNode {
     let game: Game
    
     let ROTATION_DURATION = 1.0
-    let HIGHLIGHTER_FOCUS_COLOR = UIColor(white: 1, alpha: 0.7)
+    let HIGHLIGHTER_FOCUS_COLOR = UIColor(white: 0.5, alpha: 0.7)
     
     var activeInnerWalls: [SKShapeNode]
     var inactiveInnerWalls: [SKShapeNode]
@@ -41,6 +41,10 @@ class BoardNode: SKNode {
     
     var gameScene: GameScene
     
+    var boardMask: SKSpriteNode
+    
+    let BOARD_MASK_WIDTH_RATIO = CGFloat(13.15/12.54)
+    
     init(game: Game, width: CGFloat, gameScene: GameScene) {
         self.width = width
         self.cellWidth = width / CGFloat(game.numCols)
@@ -54,6 +58,8 @@ class BoardNode: SKNode {
         self.gameScene = gameScene
         
         self.totalAngle = 0.0
+        
+        boardMask = SKSpriteNode(imageNamed: "BoardMask")
         
         super.init()
         
@@ -107,6 +113,11 @@ class BoardNode: SKNode {
             self.addChild(wall)
         }
         
+        boardMask.size = CGSize(width: width * BOARD_MASK_WIDTH_RATIO,
+                                height: height * BOARD_MASK_WIDTH_RATIO)
+        self.addChild(boardMask)
+        boardMask.zPosition = 100
+        
         resetWallCollisions()
         refreshHighlighters()
         
@@ -123,7 +134,7 @@ class BoardNode: SKNode {
         for piece in pieces{
             piece.physicsBody?.isDynamic = false
         }
-        isUserInteractionEnabled = false
+        //isUserInteractionEnabled = false
         self.run(SKAction.rotate(byAngle: CGFloat.pi/2, duration: ROTATION_DURATION)){
             //now we activate all inactive walls and vice versa
             
@@ -137,7 +148,7 @@ class BoardNode: SKNode {
                 piece.turnPhysicsBody()
                 piece.physicsBody?.isDynamic = true
             }
-            self.isUserInteractionEnabled = true
+            //self.isUserInteractionEnabled = true
             self.totalAngle -= CGFloat.pi/2
         
             self.sideWays = !self.sideWays
@@ -153,7 +164,7 @@ class BoardNode: SKNode {
         for piece in pieces{
             piece.physicsBody?.isDynamic = false
         }
-        isUserInteractionEnabled = false
+        //isUserInteractionEnabled = false
         self.run(SKAction.rotate(byAngle: -CGFloat.pi/2, duration: ROTATION_DURATION)){
             //now we activate all inactive walls and vice versa
             
@@ -169,7 +180,7 @@ class BoardNode: SKNode {
                 piece.physicsBody?.isDynamic = true
             }
             
-            self.isUserInteractionEnabled = true
+            //self.isUserInteractionEnabled = true
             self.totalAngle += CGFloat.pi/2
             
             self.sideWays = !self.sideWays
@@ -263,7 +274,7 @@ class BoardNode: SKNode {
         tempPiece = PieceNode(player: game.currentPlayer, game: game, board: self, flipped: sideWays)
         tempPiece?.physicsBody?.isDynamic = false
         let absoluteCoords = CGPoint(x: -width/2 + cellWidth/2 + cellWidth * CGFloat(col),
-                                     y: height/2 + cellWidth/2)
+                                     y: height/2 * BOARD_MASK_WIDTH_RATIO + cellWidth/2)
         tempPiece?.position = relativeCoords(from: absoluteCoords)
         self.addChild(tempPiece!)
     }
@@ -278,7 +289,7 @@ class BoardNode: SKNode {
         else{
             tempPiece?.isHidden = false
             let absoluteCoords = CGPoint(x: -width/2 + cellWidth/2 + cellWidth * CGFloat(col),
-                                         y: height/2 + cellWidth/2)
+                                         y: height/2 * BOARD_MASK_WIDTH_RATIO + cellWidth/2)
             tempPiece?.position = relativeCoords(from: absoluteCoords)
             focusCol(col)
         }
@@ -295,7 +306,7 @@ class BoardNode: SKNode {
         }
         else{
             if game.canMakeMove(move: .drop(col)){
-                gameScene.executeDrop(in: col)
+                gameScene.executeMove(.drop(col))
             }
         }
     }
